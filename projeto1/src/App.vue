@@ -1,17 +1,13 @@
 <template>
-  <LoginRegister /> <!-- Componente de login e registro -->
-  <!--<HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <HomePage /> 
 </template>
 
 <script>
-import LoginRegister from './components/LoginRegister.vue' // Importa o componente de login e registro
-//import HelloWorld from './components/HelloWorld.vue'
-
+import HomePage from './components/HomePage.vue' 
 export default {
   name: 'App',
   components: {
-    //HelloWorld
-    LoginRegister
+    HomePage
   }
 }
 </script>
