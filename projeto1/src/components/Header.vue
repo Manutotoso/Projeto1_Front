@@ -87,9 +87,6 @@
                                     <li class="nav-item">
                                         <router-link to="/news">Novidades</router-link>
                                     </li>
-                                    <li class="nav-item">
-                                        <router-link to="/contact">Contactos</router-link>
-                                    </li>
                                 </ul>
                             </div>
                         </nav> 

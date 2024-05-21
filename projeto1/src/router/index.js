@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
-import ContactView from '../views/ContactView.vue'
 import NewsView from '../views/NewsView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import SiginView from '../views/SiginView.vue'
+import EventView from '../views/EventView.vue'
 
 
 const router = createRouter({
@@ -22,11 +22,6 @@ const router = createRouter({
       component: AboutView
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView
-    },
-    {
       path: '/news',
       name: 'news',
       component: NewsView
@@ -40,6 +35,11 @@ const router = createRouter({
       path: '/sigin',
       name: 'sigin',
       component: SiginView
+    },
+    {
+      path: '/event',
+      name: 'event',
+      component: EventView
     }
   ]
 })

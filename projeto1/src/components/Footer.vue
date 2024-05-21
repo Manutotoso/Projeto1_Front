@@ -5,54 +5,32 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-40">
-                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                            <p>© [Emanuel Cafofo:2085323] [Voluntario Madeira]. Todos os direitos reservados.</p>
                             <ul class="mt-20">
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer-link mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Sitemap</h6>
+                                <h6>Links</h6>
                             </div>
                             <ul>
-                                <li><a href="index-2.html"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-right"></i>About us</a></li>
-                                <li><a href="courses.html"><i class="fa fa-angle-right"></i>Courses</a></li>
-                                <li><a href="blog.html"><i class="fa fa-angle-right"></i>News</a></li>
-                                <li><a href="events.html"><i class="fa fa-angle-right"></i>Event</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
-                                <li><a href="shop.html"><i class="fa fa-angle-right"></i>Shop</a></li>
-                                <li><a href="teachers.html"><i class="fa fa-angle-right"></i>Teachers</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                <li><router-link to="/about"><i class="fa fa-angle-right"></i>Sobre Nos</router-link></li>
+                                <li><router-link to="/news"><i class="fa fa-angle-right"></i>Novidades</router-link></li>
+                                <li><router-link to="/register"><i class="fa fa-angle-right"></i>Regista-te</router-link></li>
+                                <li><router-link to="/sigin"><i class="fa fa-angle-right"></i>Sign In</router-link></li>
                             </ul>
                         </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-link support mt-40">
-                            <div class="footer-title pb-25">
-                                <h6>Support</h6>
-                            </div>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
-                            </ul>
-                        </div> <!-- support -->
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-address mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Contact Us</h6>
+                                <h6>Contactos</h6>
                             </div>
                             <ul>
                                 <li>
@@ -60,7 +38,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                        <p>Ilha da Madeira, Caminho *******, Porta ***.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -68,7 +46,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>+3 123 456 789</p>
+                                        <p>+ *** *** ***</p>
                                     </div>
                                 </li>
                                 <li>
@@ -76,7 +54,7 @@
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>info@yourmail.com</p>
+                                        <p>voluntarioMadeira@gmail.com</p>
                                     </div>
                                 </li>
                             </ul>

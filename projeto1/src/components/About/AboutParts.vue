@@ -7,13 +7,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>About Us</h2>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                            </ol>
-                        </nav>
+                        <h2>Sobre Nos</h2>
                     </div>  <!-- page banner cont -->
                 </div>
             </div> <!-- row -->
@@ -29,16 +23,18 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="section-title mt-50">
-                        <h5>About us</h5>
-                        <h2>Welcome to Edubin </h2>
+                        <h5>Sobre Nos</h5>
+                        <h2>Bem vindo Voluntario Madeira </h2>
                     </div> <!-- section title -->
                     <div class="about-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris</p>
+                        <p>
+                            O voluntariado na Ilha da Madeira tem raízes profundas que remontam aos primeiros colonizadores. Desde os tempos antigos, a comunidade madeirense sempre valorizou a solidariedade e o apoio mútuo. Quando os primeiros exploradores portugueses chegaram à ilha, encontraram um terreno fértil e desafiador que exigia cooperação e trabalho conjunto para prosperar.                 
+                        </p>
                     </div>
                 </div> <!-- about cont -->
                 <div class="col-lg-7">
                     <div class="about-image mt-50">
-                        <img src="../../../assets/images/about/about-2.jpg" alt="About">
+                        <img src="../../../assets/images/about/about-2.png" alt="About">
                     </div>  <!-- about imag -->
                 </div> 
             </div> <!-- row -->
@@ -47,23 +43,23 @@
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="about-singel-items mt-30">
                             <span>01</span>
-                            <h4>Why Choose us</h4>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit sollicitudirem quibibendum auci</p>
-                        </div> <!-- about singel -->
+                            <h4>Por Que Escolher-nos</h4>
+                            <p>Escolha-nos para fazer a diferença na Ilha da Madeira. Com nossas iniciativas de voluntariado, você contribuirá para a preservação da natureza, apoio às comunidades locais e promoção do turismo sustentável. Juntos, podemos criar um impacto duradouro.</p>
+                            </div> <!-- about singel -->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="about-singel-items mt-30">
                             <span>02</span>
-                            <h4>Our Mission</h4>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit sollicitudirem quibibendum auci</p>
+                            <h4>A Nossa Missão</h4>
+                            <p>Conectar corações e mãos para transformar a Ilha da Madeira em um lugar melhor para todos. Junte-se a nós nesta jornada de solidariedade e impacto positivo.</p>
                         </div> <!-- about singel -->
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="about-singel-items mt-30">
                             <span>03</span>
-                            <h4>Our vission</h4>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit sollicitudirem quibibendum auci</p>
-                        </div> <!-- about singel -->
+                            <h4>Nossa Visão</h4>
+                            <p>A nossa visão é transformar a Ilha da Madeira em um exemplo global de sustentabilidade e solidariedade. Através do voluntariado, buscamos preservar o ambiente natural, apoiar as comunidades locais e promover um turismo responsável e sustentável.</p>
+                            </div> <!-- about singel -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- about items -->
@@ -71,251 +67,43 @@
     </section>
     
     <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== COUNTER PART START ======-->
-    
-    <div id="counter-part" class="bg_cover pt-65 pb-110" data-overlay="8" style="background-image: url(../../../assets/images/bg-2.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-counter text-center mt-40">
-                        <span><span class="counter">30,000</span>+</span>
-                        <p>Students enrolled</p>
-                    </div> <!-- singel counter -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-counter text-center mt-40">
-                        <span><span class="counter">41,000</span>+</span>
-                        <p>Courses Uploaded</p>
-                    </div> <!-- singel counter -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-counter text-center mt-40">
-                        <span><span class="counter">11,000</span>+</span>
-                        <p>People certifie</p>
-                    </div> <!-- singel counter -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-counter text-center mt-40">
-                        <span><span class="counter">39,000</span>+</span>
-                        <p>Global Teachers</p>
-                    </div> <!-- singel counter -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div>
-    
-    <!--====== COUNTER PART ENDS ======-->
-   
-    <!--====== TEACHERS PART START ======-->
-    
-    <section id="teachers-part" class="pt-65 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="section-title mt-50 pb-35">
-                        <h5>Featured Teachers</h5>
-                        <h2>Meet Our teachers</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-1.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-2.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-3.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-4.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-5.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-6.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-7.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="singel-teachers mt-30 text-center">
-                        <div class="image">
-                            <img src="../../../assets/images/teachers/t-8.jpg" alt="Teachers">
-                        </div>
-                        <div class="cont">
-                            <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                            <span>Vice chencelor</span>
-                        </div>
-                    </div> <!-- singel teachers -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== TEACHERS PART ENDS ======-->
-   
-    <!--====== TEASTIMONIAL PART START ======-->
-    
-    <section id="testimonial" class="bg_cover pt-115 pb-120" data-overlay="8" style="background-image: url(../../../assets/images/bg-2.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-40">
-                        <h5>Testimonial</h5>
-                        <h2>What they say</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row testimonial-slied mt-40">
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="../../../assets/images/testimonial/t-1.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="../../../assets/images/testimonial/t-2.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="../../../assets/images/testimonial/t-3.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-            </div> <!-- testimonial slied -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== TEASTIMONIAL PART ENDS ======-->
-   
     <!--====== PATNAR LOGO PART START ======-->
-    
     <div id="patnar-logo" class="pt-40 pb-80 gray-bg">
         <div class="container">
             <div class="row patnar-slied">
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-2.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-4.png" alt="Logo">
+                        <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-2.png" alt="Logo">
+                        <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
+                    <div class="singel-patnar text-center mt-40">
+                        <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </div> 
-    
+    </div>
+        
     <!--====== PATNAR LOGO PART ENDS ======-->
 </template>

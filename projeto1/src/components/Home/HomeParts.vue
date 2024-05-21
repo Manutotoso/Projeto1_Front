@@ -182,70 +182,24 @@
                     <div class="about-event mt-50">
                         <div class="event-title">
                             <h3>Upcoming events</h3>
-                        </div> <!-- event title -->
-                        <ul>
-                            <li>
+                            <button v-if="isLoggedIn && isAdministrator" @click="goToManageEventsPage">Events</button>                        </div> <!-- event title -->
+                            <ul>
+                            <li v-for="event in events" :key="event.id">
                                 <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Campus clean workshop</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
+                                <span><i class="fa fa-calendar"></i> {{ event.date }}</span>
+                                <a :href="`/events/${event.id}`"><h4>{{ event.title }}</h4></a>
+                                <span><i class="fa fa-clock-o"></i> {{ event.time }}</span>
+                                <span><i class="fa fa-map-marker"></i> {{ event.location }}</span>
                                 </div>
                             </li>
-                            <li>
-                                <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Enviroement conference</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                                </div>
-                            </li>
-                        </ul> 
-                    </div> <!-- about event -->
+                            </ul>
+                    </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-        <div class="about-bg">
-            <img src="../../../assets/images/about/bg-1.png" alt="About">
-        </div>
     </section>
     
     <!--====== ABOUT PART ENDS ======-->
-   
-    <!--====== APPLY PART START ======-->
-    
-    <section id="apply-aprt" class="pb-120">
-        <div class="container">
-            <div class="apply">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <div class="apply-cont apply-color-1">
-                            <h3>Apply for fall 2019</h3>
-                            <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                            <a href="#" class="main-btn">Apply Now</a>
-                        </div> <!-- apply cont -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="apply-cont apply-color-2">
-                            <h3>Apply for scholarship</h3>
-                            <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                            <a href="#" class="main-btn">Apply Now</a>
-                        </div> <!-- apply cont -->
-                    </div> 
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== APPLY PART ENDS ======-->
    
     <!--====== COURSE PART START ======-->
     
@@ -451,176 +405,6 @@
     
     <!--====== COURSE PART ENDS ======-->
    
-    <!--====== VIDEO FEATURE PART START ======-->
-    
-    <section id="video-feature" class="bg_cover pt-60 pb-110" style="background-image: url(../../../assets/images/bg-1.jpg)">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-last order-lg-first">
-                    <div class="video text-lg-left text-center pt-50">
-                        <a class="Video-popup" href="https://www.youtube.com/watch?v=bRRtdzJH1oE"><i class="fa fa-play"></i></a>
-                    </div> <!-- row -->
-                </div>
-                <div class="col-lg-5 offset-lg-1 order-first order-lg-last">
-                    <div class="feature pt-50">
-                        <div class="feature-title">
-                            <h3>Our Facilities</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="singel-feature">
-                                    <div class="icon">
-                                        <img src="../../../assets/images/all-icon/f-1.png" alt="icon">
-                                    </div>
-                                    <div class="cont">
-                                        <h4>Global Certificate</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                    </div>
-                                </div> <!-- singel feature -->
-                            </li>
-                            <li>
-                                <div class="singel-feature">
-                                    <div class="icon">
-                                        <img src="../../../assets/images/all-icon/f-2.png" alt="icon">
-                                    </div>
-                                    <div class="cont">
-                                        <h4>Alumni Support</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                    </div>
-                                </div> <!-- singel feature -->
-                            </li>
-                            <li>
-                                <div class="singel-feature">
-                                    <div class="icon">
-                                        <img src="../../../assets/images/all-icon/f-3.png" alt="icon">
-                                    </div>
-                                    <div class="cont">
-                                        <h4>Books & Library</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                    </div>
-                                </div> <!-- singel feature -->
-                            </li>
-                        </ul>
-                    </div> <!-- feature -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="feature-bg"></div> <!-- feature bg -->
-    </section>
-    
-    <!--====== VIDEO FEATURE PART ENDS ======-->
-    <!--====== PUBLICATION PART START ======-->
-    
-    <section id="publication-part" class="pt-115 pb-120 gray-bg">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-6 col-md-8 col-sm-7">
-                    <div class="section-title pb-60">
-                        <h5>Publications</h5>
-                        <h2>From Store </h2>
-                    </div> <!-- section title -->
-                </div>
-                <div class="col-lg-6 col-md-4 col-sm-5">
-                    <div class="products-btn text-right pb-60">
-                        <a href="#" class="main-btn">All Products</a>
-                    </div> <!-- products btn -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="../../../assets/images/publication/p-1.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>Set for life </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($50)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="../../../assets/images/publication/p-2.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>A Daughters </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($30)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="../../../assets/images/publication/p-3.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>A Magnet </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($20)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="../../../assets/images/publication/p-4.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>Pices of light</h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($75)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== PUBLICATION PART ENDS ======-->
-   
     <!--====== TEASTIMONIAL PART START ======-->
     
     <section id="testimonial" class="bg_cover pt-115 pb-115" data-overlay="8" style="background-image: url(../../../assets/images/bg-2.jpg)">
@@ -778,45 +562,81 @@
     
     <!--====== NEWS PART ENDS ======-->
    
-    <!--====== PATNAR LOGO PART START ======-->
-    
-    <div id="patnar-logo" class="pt-40 pb-80 gray-bg">
+      <!--====== PATNAR LOGO PART START ======-->
+      <div id="patnar-logo" class="pt-40 pb-80 gray-bg">
         <div class="container">
             <div class="row patnar-slied">
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-2.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-4.png" alt="Logo">
+                        <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="../../../assets/images/patnar-logo/p-2.png" alt="Logo">
+                        <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-2">
+                    <div class="singel-patnar text-center mt-40">
+                        <img src="../../../assets/images/patnar-logo/p-1.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="col-lg-2">
                     <div class="singel-patnar text-center mt-40">
                         <img src="../../../assets/images/patnar-logo/p-3.png" alt="Logo">
                     </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </div> 
-    
+    </div>
+        
     <!--====== PATNAR LOGO PART ENDS ======-->
    
 </template>
+<script setup>
+import { ref } from 'vue';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useRouter } from 'vue-router';
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+
+const db = getFirestore();
+const isLoggedIn = ref(false);
+const isAdministrator = ref(false);
+const events = ref([]);
+
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        isLoggedIn.value = true;
+        isAdministrator.value = user.email === 'adm@adm.com';
+    } else {
+        isLoggedIn.value = false;
+        isAdministrator.value = false;
+    }
+});
+
+const fetchEvents = async () => {
+  const eventCollection = collection(db, 'events');
+  const eventSnapshot = await getDocs(eventCollection);
+  events.value = eventSnapshot.docs.map(doc => doc.data());
+};
+
+fetchEvents();
+
+const router = useRouter();
+
+const goToManageEventsPage = () => {
+  router.push('/event');
+};
+
+</script>
