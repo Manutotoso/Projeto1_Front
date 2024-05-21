@@ -146,28 +146,59 @@ p {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border: 1px solid #ffc600;
-	padding: 0 35px;
+	border: 1px solid #114922;
+	padding: 0 25px;
+    margin-right: 10px;
 	font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 	line-height: 50px;
 	border-radius: 5px;
-    color: #07294d;
+    color: #fafafa;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     z-index: 5;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-color: #ffc600;
+    background-color: #114922;
 }
 .main-btn:hover{
-    color: #ffc600;
-    border-color: #07294d;
-    background-color: #07294d;
+    color: #000000;
+    border-color: #2bb336;
+    background-color: #2bb336;
 }
-
+.main-btn2 {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #93c9a3;
+	padding: 0 10px;
+	font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+	line-height: 50px;
+	border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #93c9a3;
+}
+.main-btn2:hover{
+    color: #ffffff;
+    border-color: #022505;
+    background-color: #022505;
+}
 
 
 /*===== All Section Title Style =====*/
@@ -221,7 +252,7 @@ p {
 .rubix-cube .layer{
 	width:14px;
 	height:14px;
-	background-color:#07294d;
+	background-color:#27700a;
 	border:1px solid #FFF;
 	position:absolute;
 	
@@ -405,7 +436,7 @@ p {
 /*===== Header top =====*/
 
 .header-top{
-    background-color: #07294d;
+    background-color: #0d6126;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -528,10 +559,10 @@ p {
 }
 
 .navigation .navbar .navbar-nav li a{
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #07294d;
+    color: #074d13;
     text-transform: uppercase;
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
@@ -540,7 +571,7 @@ p {
 
 .navigation .navbar .navbar-nav > li > a.active,
 .navigation .navbar .navbar-nav > li > a:hover{
-    color: #ffc600;
+    color: #44492f;
 }
 
 .navigation .navbar .navbar-nav li .sub-menu{
@@ -932,8 +963,9 @@ p {
 	padding: 0;
 }
 .slider-search .main-btn:hover{
-    border-color: #07294d;
+    border-color: #073311;
 }
+
 
 
 .slider-feature{}

@@ -1,11 +1,4 @@
 <template>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/feed">Feed</RouterLink>
-    <RouterLink to="/register">Register</RouterLink>
-    <RouterLink to="/sigin">Sigin</RouterLink>
-    <button @click="handleSignOut" v-if="isLoggedIn">Sign Out</button>
-  </nav>
   <RouterView />
 </template>
 
@@ -14,8 +7,9 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { onMounted, ref } from 'vue';
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import router from './router';
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const isLoggedIn = ref(false);
 
 let auth;

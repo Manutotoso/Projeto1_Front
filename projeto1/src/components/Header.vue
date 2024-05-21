@@ -19,21 +19,21 @@
                     <div class="col-lg-6">
                         <div class="header-contact text-lg-left text-center">
                             <ul>
-                                <li><img src="../../assets/images/all-icon/map.png" alt="icon"><span>127/5 Mark street, New york</span></li>
-                                <li><img src="../../assets/images/all-icon/email.png" alt="icon"><span>info@yourmail.com</span></li>
+                                <li><img src="../../assets/images/all-icon/map.png" alt="icon"><span>Ilha da Madeira</span></li>
+                                <li><img src="../../assets/images/all-icon/email.png" alt="icon"><span>ilhadamadeira@gmail.com</span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="header-opening-time text-lg-right text-center">
-                            <p>Opening Hours : Monday to Saturay - 8 Am to 5 Pm</p>
+                            <p>Junte-se a Nós e Faça a Diferença</p>
                         </div>
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- header top -->  
 
-        <div class="header-logo-support pt-30 pb-30">
+        <div class="header-logo-support pt-30 pb-10">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
@@ -50,12 +50,14 @@
                                     <img src="../../assets/images/all-icon/support.png" alt="icon">
                                 </div>
                                 <div class="cont">
-                                    <p>Need Help? call us free</p>
-                                    <span>321 325 5678</span>
+                                    <p>Precisa de Ajuda?Lige-nos!</p>
+                                    <span>*** *** ***</span>
                                 </div>
                             </div>
                             <div class="button float-left">
-                                <a href="#" class="main-btn">Apply Now</a>
+                                <router-link to="/register" class="main-btn">Register</router-link>
+                                <router-link to="/sigin" class="main-btn">Sign In</router-link>
+                                <button @click="handleSignOut" v-if="isLoggedIn" class="main-btn2">Sign Out</button>
                             </div>
                         </div>
                     </div>
@@ -77,12 +79,10 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <router-link to="/">Home</router-link>
-                                        <ul class="sub-menu">
-                                        </ul>
+                                        <router-link to="/">Inicio</router-link>
                                     </li>
                                     <li class="nav-item">
-                                        <router-link to="/about">About us</router-link>
+                                        <router-link to="/about">Sobre Nos</router-link>
                                     </li>
                                     <li class="nav-item">
                                         <router-link to="/news">Novidades</router-link>
@@ -97,15 +97,42 @@
                     <div class="col-lg-2 col-md-2 col-sm-3 col-4">
                         <div class="right-icon text-right">
                             <ul>
-                                <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i><span>0</span></a></li>
+                                <li><a href="#" id="search"><i class="fa fa-search"></i></a></li><!-- IMPORTANTEEEE -->
                             </ul>
-                        </div> <!-- right icon -->
+                        </div> 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                </div> 
+            </div>
         </div>
         
     </header>
     
 </template>
+<script setup>
+
+import { RouterLink, RouterView } from 'vue-router'
+import { onMounted, ref } from 'vue';
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const isLoggedIn = ref(false);
+
+let auth;
+onMounted(() => {
+    auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            isLoggedIn.value = true;
+        } else {
+            isLoggedIn.value = false;
+        }
+    });
+});
+
+const handleSignOut = () => {
+  signOut(auth).then(() => {
+   router.push("/");
+  });
+};
+</script>

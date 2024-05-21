@@ -5,9 +5,6 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-40">
-                            <div class="logo">
-                                <a href="#"><img src="../../assets/images/logo-2.png" alt="Logo"></a>
-                            </div>
                             <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
                             <ul class="mt-20">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -87,24 +84,7 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-        </div> <!-- footer top -->
-        
-        <div class="footer-copyright pt-10 pb-25">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="copyright text-md-left text-center pt-15">
-                            <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a> </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="copyright text-md-right text-center pt-15">
-                           
-                        </div>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
+        </div> <!-- footer top -->    
     </footer>
-    
+
 </template>
