@@ -91,13 +91,6 @@
                             </div>
                         </nav> 
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-3 col-4">
-                        <div class="right-icon text-right">
-                            <ul>
-                                <li><a href="#" id="search"><i class="fa fa-search"></i></a></li><!-- IMPORTANTEEEE -->
-                            </ul>
-                        </div> 
-                    </div>
                 </div> 
             </div>
         </div>

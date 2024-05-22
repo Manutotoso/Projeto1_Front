@@ -6,6 +6,7 @@ import NewsView from '../views/NewsView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import SiginView from '../views/SiginView.vue'
 import EventView from '../views/EventView.vue'
+import MapView from '../views/MapView.vue'
 
 
 const router = createRouter({
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/event',
       name: 'event',
       component: EventView
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: MapView
     }
   ]
 })
