@@ -26,4 +26,10 @@ npm run dev
 
 ```sh
 npm run build
+npm install firebase
+npm install vue-router@4
+npm install vue-maplibre-gl
+npm install -D sass
+npm install vue-maplibre-gl
+9FBkxdhAHfvtjOyUiDuk
 ```
