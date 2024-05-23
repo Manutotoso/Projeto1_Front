@@ -5,7 +5,6 @@ import AboutView from '../views/AboutView.vue'
 import NewsView from '../views/NewsView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import SiginView from '../views/SiginView.vue'
-import EventView from '../views/EventView.vue'
 import MapView from '../views/MapView.vue'
 
 
@@ -15,12 +14,21 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      beforeEnter: (to, from, next) => {
+        if (from.name) {
+          history.pushState({}, '', to.fullPath);
+          location.reload();
+        } else {
+          next();
+        }
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: AboutView
+      component: AboutView,
+      
     },
     {
       path: '/news',
@@ -36,11 +44,6 @@ const router = createRouter({
       path: '/sigin',
       name: 'sigin',
       component: SiginView
-    },
-    {
-      path: '/event',
-      name: 'event',
-      component: EventView
     },
     {
       path: '/map',

@@ -246,14 +246,14 @@
   }
   
   .new-message {
-    margin-top: 40px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    text-align: center;
-  }
+  margin: 40px auto; /* Change this line */
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
   
   .new-message h3 {
     color: #333;
