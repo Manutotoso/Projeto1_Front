@@ -1,7 +1,7 @@
 # 🌏FrontendCTESP🌏
 
-Este projeto é uma aplicação web para gerenciar eventos, que inclui a capacidade de exibir esses eventos em um mapa, para alem disto tem um sistema de login e registo. 
-A aplicação foi construída principalmente usando Vue.js e Firebase para o armazenamento de dados e autenticação de usuários.O projeto nao é maioritariamente de SPA por motivos de estética.
+Este projeto é uma aplicação web para gerenciar eventos, que inclui a capacidade de exibir esses eventos em um mapa, para alem disto tem um sistema de login e registo com **persistencia de dados**.Nao tem histórico de pesquisa para esta API porque não existia contexto de uso.
+A aplicação foi construída principalmente usando Vue.js e Firebase para o armazenamento de dados e autenticação de usuários.O projeto nao é maioritariamente de SPA por motivos de estética e contem todos os requisitos que foram pedidos para este trabalho.
 
 ## Funcionalidades
 - ⚙️Sistema Apelativo e intuitivo
